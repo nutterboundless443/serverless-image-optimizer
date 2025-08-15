@@ -1,0 +1,13 @@
+service: serverless-image-optimizer
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+functions:
+  optimize:
+    handler: src/index.handler
+    events:
+      - s3:
+          bucket: your-upload-bucket
+          event: s3:ObjectCreated:*
