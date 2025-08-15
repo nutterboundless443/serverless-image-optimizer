@@ -2,7 +2,7 @@ service: serverless-image-optimizer
 
 provider:
   name: aws
-  runtime: nodejs14.x
+  runtime: nodejs18.x  # Updated to a newer Node.js runtime version
 
 functions:
   optimize:
