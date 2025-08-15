@@ -6,8 +6,8 @@ provider:
 
 functions:
   optimize:
-    handler: src/index.handler
+    handler: src/index.handler  # Function that optimizes images
     events:
-      - s3:
-          bucket: your-upload-bucket
-          event: s3:ObjectCreated:*
+      - s3:  # Trigger this function on S3 events
+          bucket: your-upload-bucket  # S3 bucket where images are uploaded
+          event: s3:ObjectCreated:*  # Trigger on object creation in the bucket
