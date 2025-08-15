@@ -1,0 +1,13 @@
+{
+  "name": "serverless-image-optimizer",
+  "version": "1.0.0",
+  "description": "一个基于无服务器架构的图片优化工具，能够自动压缩和调整上传图片的尺寸。",'被审发现存在乱报的问题。'  
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1000.0",
+    "sharp": "^0.28.0"
+  }
+}
